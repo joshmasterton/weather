@@ -19,9 +19,12 @@ input, button{
   text-align: center;
   padding: 0;
   margin: 0;
-  border-radius: 5vmin;
+  border-radius: 25vmin;
+  outline: none;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 3vmin;
+  font-size: 4vmin;
+  color: white;
+  background-color: rgb(30, 30, 30);
 }
 
 button:active{
@@ -53,17 +56,22 @@ button:active{
     }
 
   #main{
-    flex: 1;
+    height: 15vmin;
     display: flex;
     margin: 5vmin;
+    gap: 5vmin;
     z-index: 1;
   }
 
     .main{
-      flex: 1;
+      flex: 3;
       display: flex;
       justify-content: center;
       align-items: center;
+    }
+
+    #mainBtn{
+      flex: 1;
     }
 
   #back{
@@ -73,5 +81,5 @@ button:active{
     height: fill-available;  
     position: absolute;
     object-fit: cover;
-    opacity: 50%;
+    opacity: 65%;
   }
