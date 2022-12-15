@@ -27,6 +27,7 @@ const display = (() => {
 
     const searchBtn = document.createElement("button");
     searchBtn.className = "main";
+    searchBtn.id = "mainBtn";
     searchBtn.innerHTML = "Search";
     searchBtn.addEventListener("click", (e) => {
       weather.getWeather(e, searchLocation.value, getLoc, getTemp);
